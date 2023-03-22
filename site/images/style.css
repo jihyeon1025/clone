@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+#container{
+    width: 1200px;
+    height: auto;
+    background-color: blue;
+}
+
+header{
+    width:100%;    /*  너비 */
+    height:100px;   /* 높이 */ 
+    background-color: #07c;
+  }
+
+#logo{
+ width: 250px;
+ height: 100px;
+ float: left;
+}
+
+#logo h1{
+    font-family: 'Merienda', cursive;
+    font-weight: 700px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 -1px 0 #222;
+    text-align: center;
+    padding-left: 20px;
+}
+
+#nav{
+    width: 900px;
+    height: 100px;
+    /* background-color: green; */
+    float: right;
+
+}
+
+#slideShow {   
+    clear:both;   /* 플로팅 해제 */
+    width:100%;    /* 너비 */ 
+    height:300px;   /* 높이 */ 
+    overflow:hidden;   /* 영역 넘치면 감춤 */ 
+    position: relative;
+  }
+#slides {
+    position: absolute;
+  }
+  #slides > img {
+    width:100%;  /* 너비 */
+    float:left;  /* 가로로 배치 */
+  }
+
+button{
+    position: absolute;
+    height:100%;  /* 위아래 가득 차게 */ 
+    top:0;
+    border:none;  /* 테두리 없이 */  
+    padding:20px;
+    background-color: transparent;  /* 투명 배경 */ 
+    color:#000;  /* 화살표 색은 검정 */  
+    font-weight:800;  /* 굵게 */ 
+    font-size: 24px;  /* 화살표 크기 */ 
+    opacity: 0.5;  /* 반투명 */ 
+  }
+
+#prev{
+left: 0;
+}
+
+#next{
+    right: 0;
+}
+
+button:hover {
+    background-color:#222;  /* 짙은 회색 배경 */
+    color:#fff;   /* 흰색 화살표 */ 
+    opacity:0.6;   /* 불투명도를 조금 높임 */ 
+    cursor:pointer;  /* 커서 모양을 포인터로 */ 
+  }
+  button:focus {
+    outline:0;  /* 아웃트라인 없앰 */
+  }
+
+#tabMenu{
+    width: 800px;
+    height: 300px;
+    background-color: pink;
+    float: left;
+
+}
+
+#links{
+    width:auto;
+    height: 300px;
+    background-color: lightblue;
+    /* float: right; */
+}
+
+footer{
+    width: 1200px;
+    height: 100px;
+    background-color:gray;
+}
+
+ul{
+    list-style: none;
+}
+
+#topmenu > li{
+    float: left;
+    position: relative;
+}
+
+#topmenu > li > a {
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px #07c;
+    padding: 20px 60px;
+}
+
+#topmenu > li > a > span{
+    font-size: 0.5em;
+}
+
+#topmenu > li> a:hover{
+    color: #000;
+    text-shadow: 0 -1px #07c;
+}
+
+/* 처음에는 안보이게 설정 */
+#topmenu > li > ul {
+    display: none;
+    width: 160px;
+    background-color: rgba(255, 255,255, 0.6);
+    left: 30px;
+}
+
+#topmenu > li>ul>li {
+    padding: 10px 10px 10px 30px;
+}
+
+#topmenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color : black;
+}
+
+#topmenu > li:hover > ul{
+    display: block;
+    z-index: 10;
+}
+
+#topmenu > li > ul > li > a:hover{
+    color: #f00;
+}
+
