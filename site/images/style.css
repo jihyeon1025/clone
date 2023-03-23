@@ -197,13 +197,57 @@ button:hover {
 footer{
     width: 1200px;
     height: 100px;
-    background-color:gray;
+    background-color:white;
+}
+
+#info1 span a{
+    font-weight: bolder;
+    padding-left: 10px;
+    /* padding-top: 30px; */
+    text-decoration-line:none;
+    color: rgb(102, 102, 102);
+    
+}
+
+#info1{
+    width: 500px;
+    /* background-color: #07c; */
+    float: left;
+}
+
+#info2{
+    width: 180px;
+    float: left;
+    height: 72px;
+    margin-left: 500px;
+    padding-top: 20px;
+    size: 100px;
+            position:absolute;  
+        right:0;  /* 오른쪽 끝에 배치 */ 
+}
+
+.space{
+    padding-left: 13px;
+    color: rgb(102, 102, 102);
+    font-weight: lighter;
+}
+
+#addr{
+    color:lightslategray;
+    font-weight: lighter;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 ul{
     list-style: none;
 }
 
+#topmenu {  
+    height:60px; 
+  }
+  
 #topmenu > li{
     float: left;
     position: relative;
@@ -215,6 +259,7 @@ ul{
     font-weight: 600;
     text-shadow: 0 1px #07c;
     padding: 20px 60px;
+    text-decoration-line:none;
 }
 
 #topmenu > li > a > span{
@@ -232,13 +277,14 @@ ul{
     display: none;
     width: 160px;
     background-color: rgba(255, 255,255, 0.6);
-    left: 30px;
+    left: 0px;
     position:absolute; /*겹치지않게 */
     margin: 0;
+    
 }
 
 #topmenu > li>ul>li {
-    padding: 10px 10px 10px 30px;
+    padding: 10px;
     
 }
 
@@ -246,6 +292,7 @@ ul{
     font-size: 14px;
     padding: 10px;
     color : black;
+    text-decoration-line:none;
 }
 
 #topmenu > li:hover > ul {
