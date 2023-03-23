@@ -3,7 +3,8 @@
 #container{
     width: 1200px;
     height: auto;
-    background-color: blue;
+    background-color: white;
+    margin: auto;
 }
 
 header{
@@ -83,18 +84,114 @@ button:hover {
   }
 
 #tabMenu{
-    width: 800px;
+    width: 600px;
     height: 300px;
-    background-color: pink;
+    background-color: white;
     float: left;
+    padding-top: 5px;
 
 }
+
+#tabMenu input[type="radio"]{
+    display: none;
+}
+
+#tabMenu label{
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: bolder;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid transparent;
+}
+
+#tabMenu label:hover{
+    color:#222;
+    cursor: pointer;
+}
+
+#tabMenu input:checked + label{
+    color: #b00;
+    border:1px solid #ddd;
+    background-color: #eee;
+}
+
+.tabContent{
+    display: none;
+    /* padding: 20px 0 0; */
+    border-top: 1px solid #ddd;
+}
+.tabContent h2{
+    display: none;
+}
+
+#notice ul{
+    list-style: disc;
+    /* margin-left: 30px; */
+}
+
+#notice ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#gallery ul li{
+    display: inline;
+}
+
+
+#tab1:checked ~ #notice, 
+#tab2:checked ~ #gallery {
+  display:block;
+}
+
 
 #links{
     width:auto;
     height: 300px;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     /* float: right; */
+}
+
+#links ul{
+    padding: 0;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+#links ul li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#links ul li a span{
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    line-height: 150px;
+}
+
+#links ul li a{
+    text-decoration-line:none;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    margin-top: 20px;
+}
+
+#quick-icon1{
+    background-image: url(../images/icon-1.jpg);
+}
+#quick-icon2{
+    background-image: url(../images/icon-2.jpg);
+}
+#quick-icon3{
+    background-image: url(../images/icon-3.jpg);
 }
 
 footer{
@@ -127,6 +224,7 @@ ul{
 #topmenu > li> a:hover{
     color: #000;
     text-shadow: 0 -1px #07c;
+    
 }
 
 /* 처음에는 안보이게 설정 */
@@ -135,10 +233,13 @@ ul{
     width: 160px;
     background-color: rgba(255, 255,255, 0.6);
     left: 30px;
+    position:absolute; /*겹치지않게 */
+    margin: 0;
 }
 
 #topmenu > li>ul>li {
     padding: 10px 10px 10px 30px;
+    
 }
 
 #topmenu > li > ul > li > a {
@@ -147,12 +248,16 @@ ul{
     color : black;
 }
 
-#topmenu > li:hover > ul{
-    display: block;
-    z-index: 10;
+#topmenu > li:hover > ul {
+    display: block;  /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
+    z-index:10;  /* 슬라이드 쇼에 가리지 않게 조절 */ 
 }
 
 #topmenu > li > ul > li > a:hover{
     color: #f00;
 }
 
+hr {
+    height: 2px;
+    background-color:black;
+  }
